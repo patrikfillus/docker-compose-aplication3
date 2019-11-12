@@ -7,7 +7,7 @@ services:
     networks:
       - nodenet
     environment:
-      - SERVICE_PORTS=8080
+      - SERVICE_PORTS=7080
     deploy:
       replicas: 10
       update_config:
@@ -27,7 +27,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     ports:
-      - 80:80
+      - 7080:7080
     networks:
       - nodenet
     deploy:
